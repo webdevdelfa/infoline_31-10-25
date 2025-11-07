@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Убрать маркеры у маркированного списка */
+ul>li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    /* inherit - Наследовать */
+    color: inherit;
+    /* Убрать подчеркивание */
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+.container {
+    width: 1180px;
+    margin: 0px auto;
+}
