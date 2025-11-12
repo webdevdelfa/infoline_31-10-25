@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Инфолайн</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -26,7 +22,7 @@
                         <!-- Логотип добавляем изображением, так как если не подключаться фирменные шрифты то теряется смысл логотипа -->
                         <img src="images/icons/logo-infoline.svg" alt="">
                     </a>
-                    <nav class="nav">
+                    <nav class="nav header__nav">
                         <ul class="nav__list">
                             <li class="nav__item">
                                 <a href="" class="nav__link">Главная</a>
@@ -46,6 +42,27 @@
                 </div>
             </div>
         </header>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <div class="address">ул. республики, 61</div>
+                    <h1 class="title">
+                        <span>Бизнес-центр</span>
+                        <span>в тюмени</span>
+                    </h1>
+                    <div class="hero__btns">
+                        <button class="btn btn--blue btn--large">Заказать</button>
+                        <a href="#" class="btn btn--outline btn--small">Аренда площади</a>
+                    </div>
+                </div>
+                <div class="hero__img-wrap">
+                    <img src="./images/bg/building.png" alt="Многоэтажное здание" class="hero__img" width="420"
+                        height="550">
+                </div>
+            </div>
+        </section>
+        <!-- /Hero -->
     </div>
 </body>
 

@@ -4,7 +4,10 @@
     color: #fff;
 }
 
-.menu {}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
 
 .logo {
     display: block;
@@ -12,7 +15,17 @@
 
 .nav {}
 
-.nav__list {}
+.header__nav {
+    background-color: #404F59;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 40px;
+    margin-top: -29px;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 30px;
+}
 
 .nav__item {}
 
@@ -25,6 +38,19 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: #fff;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.phone::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../images/icons/tel.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .phone span {
