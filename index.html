@@ -14,9 +14,9 @@
     <div class="wrapper">
         <!-- Шапка страницы -->
         <header class="header">
-            <div class="container">
-                <!-- Создали блок menu так как на мобильнике весь этот блок бюдет полноэкранным меню -->
-                <div class="menu">
+            <!-- Создали блок menu так как на мобильнике весь этот блок бюдет полноэкранным меню -->
+            <div class="menu active">
+                <div class="container menu__container">
                     <!-- Логотип всегда делаем ссылкой -->
                     <a href="#" class="logo">
                         <!-- Логотип добавляем изображением, так как если не подключаться фирменные шрифты то теряется смысл логотипа -->
@@ -39,6 +39,12 @@
                         </ul>
                     </nav>
                     <a href="tel:+73452388000" class="phone"><span>8 (3452)</span>388-000</a>
+                    <button class="burger">
+                        <img src="./images/icons/burger.svg" alt="Кнопка мобильного меню"
+                            class="burger__icon burger__icon--open">
+                        <img src="./images/icons/close-x.svg" alt="Закрыть мобильное меню"
+                            class="burger__icon burger__icon--close">
+                    </button>
                 </div>
             </div>
         </header>
@@ -52,8 +58,8 @@
                         <span>в тюмени</span>
                     </h1>
                     <div class="hero__btns">
-                        <button class="btn btn--blue btn--large">Заказать</button>
-                        <a href="#" class="btn btn--outline btn--small">Аренда площади</a>
+                        <button class="btn btn--blue btn--large">Заказать звонок</button>
+                        <a href="#" class="btn btn--outline">Аренда площади</a>
                     </div>
                 </div>
                 <div class="hero__img-wrap">
@@ -63,6 +69,112 @@
             </div>
         </section>
         <!-- /Hero -->
+        <!-- Rent -->
+        <section class="rent">
+            <div class="container">
+                <h2 class="section-title rent__title">аренда</h2>
+                <div class="filter-btns">
+                    <button class="btn btn--outline active" data-type="office">Офисы (7)</button>
+                    <button class="btn btn--outline" data-type="conference">конференс-залы (2)</button>
+                    <button class="btn btn--outline" data-type="retail">Торговые (0)</button>
+                </div>
+            </div>
+            <div class="rent__carusel">
+                <div class="container rent__carusel-container">
+                    <!-- Стрелка влево -->
+                    <button class="rent__carusel-control rent__carusel-control--prev">
+                        <svg width="16" height="30" viewBox="0 0 16 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.3137 0.353576L0.707092 14.9601L15.3137 29.5667" stroke="#7A7A7A" />
+                        </svg>
+                    </button>
+                    <div class="rent__carousel-inner">
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./images/content/card-img1.jpg" srcset="./images/content/card-img1@2x.jpg 2x"
+                                    alt="Кабинет" width="380" height="222">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__details">
+                                    <div class="card__detail">
+                                        <span class="card__label">Площадь</span>
+                                        <span class="card__value">42</span>
+                                    </div>
+                                    <div class="card__detail">
+                                        <span class="card__label">Этаж</span>
+                                        <span class="card__value">7</span>
+                                    </div>
+                                    <div class="card__detail">
+                                        <span class="card__label">Интернет</span>
+                                        <span class="card__value card__value--status--true">Есть</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn--blue btn--large">запросить цену</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./images/content/card-img1.jpg" srcset="./images/content/card-img1@2x.jpg 2x"
+                                    alt="Кабинет" width="380" height="222">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__details">
+                                    <div class="card__detail">
+                                        <span class="card__label">Площадь</span>
+                                        <span class="card__value">42</span>
+                                    </div>
+                                    <div class="card__detail">
+                                        <span class="card__label">Этаж</span>
+                                        <span class="card__value">7</span>
+                                    </div>
+                                    <div class="card__detail">
+                                        <span class="card__label">Интернет</span>
+                                        <span class="card__value card__value--status--true">Есть</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn--blue btn--large">запросить цену</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./images/content/card-img1.jpg" srcset="./images/content/card-img1@2x.jpg 2x"
+                                    alt="Кабинет" width="380" height="222">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__details">
+                                    <div class="card__detail">
+                                        <span class="card__label">Площадь</span>
+                                        <span class="card__value">42</span>
+                                    </div>
+                                    <div class="card__detail">
+                                        <span class="card__label">Этаж</span>
+                                        <span class="card__value">7</span>
+                                    </div>
+                                    <div class="card__detail">
+                                        <span class="card__label">Интернет</span>
+                                        <span class="card__value card__value--status--true">Есть</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn--blue btn--large">запросить цену</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="rent__carusel-control rent__carusel-control--next">
+                        <svg width="16" height="30" viewBox="0 0 16 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.353544 29.5667L14.9601 14.9601L0.353546 0.353574" stroke="#7A7A7A" />
+                        </svg>
+                    </button>
+                    <div class="carousel__indicators">
+                        <div class="carousel__indicator"></div>
+                        <div class="carousel__indicator"></div>
+                        <div class="carousel__indicator active"></div>
+                        <div class="carousel__indicator"></div>
+                        <div class="carousel__indicator"></div>
+                        <div class="carousel__indicator"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Rent -->
     </div>
 </body>
 

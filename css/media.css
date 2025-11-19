@@ -1,0 +1,140 @@
+@media (max-width: 830px) {
+    .container {
+        max-width: 93vw;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .menu {
+        background: #404F59;
+        border-radius: 0px 0px 10px 10px;
+        padding: 16px 0px;
+    }
+
+    .menu.active {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 100;
+        top: 0px;
+        left: 0px;
+        border-radius: 0;
+        background-color: #1E92E7;
+    }
+
+    .menu.active {
+        .logo {
+            opacity: 20%;
+        }
+
+        .burger__icon--close {
+            display: block;
+        }
+
+        .burger__icon--open {
+            display: none;
+
+        }
+
+        .header__nav {
+            display: block;
+            background: none;
+            border-radius: 0;
+            padding: 0px 0px;
+            margin-top: 0px;
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .nav__list {
+            flex-direction: column;
+        }
+
+        .phone {
+            display: block;
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .phone::before {
+            display: none;
+        }
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .hero {
+        padding-top: 28px;
+    }
+
+    .hero__img-wrap {
+        flex: 1 0 44.5%;
+    }
+
+    .hero__img-wrap::after {
+        left: 15px;
+        top: -10px;
+    }
+
+    .hero__img {
+        right: -40px;
+    }
+}
+
+@media (max-width:579px) {
+    .hero {
+        padding-top: 0;
+    }
+
+    .hero__container {
+        flex-direction: column;
+    }
+
+    .hero__content {
+        text-align: center;
+        flex: 1 0 100%;
+        padding: 54px 0px 50px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero__img-wrap {
+        flex: 1 0 100%;
+        margin-left: -3.5vw;
+        margin-right: -3.5vw;
+    }
+
+    .hero__img-wrap::after {
+        display: none;
+    }
+
+    .hero__img-wrap::before {
+        bottom: 0px;
+        top: auto;
+        height: 90%;
+    }
+
+    .hero__img {
+        right: 0px;
+        max-width: 79vw;
+    }
+}

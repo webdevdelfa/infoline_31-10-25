@@ -1,0 +1,39 @@
+.logo {
+    display: block;
+    flex-shrink: 0;
+}
+
+.btn {
+    border-radius: 5px;
+    border: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.btn--blue {
+    background-color: #1E92E7;
+}
+
+.btn--large {
+    padding: 14px 30px;
+}
+
+.btn--outline {
+    background-color: transparent;
+    border: 1px solid #1E92E7;
+    padding: 9px 20px;
+    color: #000;
+}
+
+.section-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #000;
+}

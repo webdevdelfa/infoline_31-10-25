@@ -4,13 +4,10 @@
     color: #fff;
 }
 
-.menu {
+.menu__container {
     display: flex;
     justify-content: space-between;
-}
-
-.logo {
-    display: block;
+    column-gap: 10px;
 }
 
 .nav {}
@@ -41,6 +38,7 @@
     display: flex;
     column-gap: 10px;
     align-items: center;
+    white-space: nowrap;
 }
 
 .phone::before {
@@ -55,4 +53,13 @@
 
 .phone span {
     color: rgba(255, 255, 255, 0.4);
+}
+
+.burger {
+    display: none;
+    flex-shrink: 0;
+}
+
+.burger__icon--close {
+    display: none;
 }
